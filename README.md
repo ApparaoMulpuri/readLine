@@ -34,8 +34,9 @@ if let input = input {
 ```
 let input = readLine()
 if let input = input {
-    let numbersFromKeyboard = input.characters.split(separator: " ")
+    let numbersFromKeyboard = input.split(separator: " ")
     let numbers = numbersFromKeyboard.map { Int(String($0))! }
     print(numbers)
 }
 ```
+
